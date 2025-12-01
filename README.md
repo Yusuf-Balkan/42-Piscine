@@ -143,21 +143,19 @@ Feel free to explore, learn from it, or compare it with your own journey.
 
 ---
 
-<h1>Proje Nasıl Pushlanır </h1>
-
+<h1>How to Push a Project</h1>
 
 <code> git init </code>
-<br> Git version control sisteminde, yeni bir Git deposu oluşturmak için kullanılan bir komuttur. Bu komut, çalışma dizininizi Git deposu haline getirir ve Git'in dosyaları izlemesi ve saklaması için gerekli tüm verileri oluşturur.
+<br> This command is used to create a new Git repository. It turns your current working directory into a Git repository and sets up all the necessary files for Git to track and manage changes.
 
 <code> git add . </code>
-<br> Git üzerinde bulunan tüm dosyaları ve değişiklikleri geçerli çalışma dizinine eklemek için kullanılan bir komandır. Bu komut, Git üzerindeki tüm dosyaları ve değişiklikleri Git veritabanına kaydetmenize olanak tanır.
-
+<br> This command adds all files and changes in your current working directory to the staging area. It allows Git to track these files and prepare them to be committed.
 
 <code> git commit -m "Message" </code>
-<br> git çalışma dizinindeki değişiklikleri geçici bir depolama alanına (commit) ekler ve bu değişikliklerin neden yapıldığı hakkında kısa bir açıklama ("-m" seçeneği ile belirtilen mesaj) ekler. Bu komut, projede yapılan değişikliklerin kaydedilmesi için kullanılır.
+<br> This command saves the staged changes as a commit. The <code>-m</code> option is used to include a short message explaining what changes were made and why.
 
-<code> git push repo_linki </code>
-<br> Git repositorisindeki dosyaları Git depolama hizmetine göndermeyi sağlar.
+<code> git push repo_link </code>
+<br> This command uploads your local commits to the remote Git repository.
 
-<code> git clone repo_linki </code>
-<br> Not: Proje pushlandı projenizi kontrol etmek için git clone ile kontrol edebilirsiniz.
+<code> git clone repo_link </code>
+<br> Note: After pushing your project, you can verify it by cloning your repository using <code>git clone</code>.
