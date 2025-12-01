@@ -1,5 +1,6 @@
 42-PISCINE
-![42](https://42network.medium.com/42-lausanne-the-beginning-of-a-great-story-527279881287)
+
+![1_jOyqdixlopccmJv-S6D13Q](https://github.com/user-attachments/assets/1d1f8407-6486-4d52-8164-c6f306268077)
 
 Proje Nasıl Pushlanır
  git init 
