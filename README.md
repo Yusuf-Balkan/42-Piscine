@@ -2,23 +2,141 @@
 
 ![1_jOyqdixlopccmJv-S6D13Q](https://github.com/user-attachments/assets/1d1f8407-6486-4d52-8164-c6f306268077)
 
-Proje Nasıl Pushlanır
- git init 
- 
-Git version control sisteminde, yeni bir Git deposu oluşturmak için kullanılan bir komuttur. Bu komut, çalışma dizininizi Git deposu haline getirir ve Git'in dosyaları izlemesi ve saklaması için gerekli tüm verileri oluşturur.
+---
 
- git add . 
- 
-Git üzerinde bulunan tüm dosyaları ve değişiklikleri geçerli çalışma dizinine eklemek için kullanılan bir komandır. Bu komut, Git üzerindeki tüm dosyaları ve değişiklikleri Git veritabanına kaydetmenize olanak tanır.
+# 📘 42 Piscine — Full Journey Archive
 
- git commit -m "Message" 
- 
-git çalışma dizinindeki değişiklikleri geçici bir depolama alanına (commit) ekler ve bu değişikliklerin neden yapıldığı hakkında kısa bir açıklama ("-m" seçeneği ile belirtilen mesaj) ekler. Bu komut, projede yapılan değişikliklerin kaydedilmesi için kullanılır.
+Welcome to my **42 Piscine** repository — a complete archive of everything I worked on during the famous 42 swimming pool (Piscine).
+This repo contains **every Shell project, every C module, every Rush, every exam practice**, and additional tools I used along the way.
 
- git push repo_linki 
- 
-Git repositorisindeki dosyaları Git depolama hizmetine göndermeyi sağlar.
+The goal is simple:
+**To keep a clean, organized, and fully documented record of my 42 Piscine experience.**
 
- git clone repo_linki 
- 
-Not: Proje pushlandı projenizi kontrol etmek için git clone ile kontrol edebilirsiniz.
+---
+
+## 🏁 About the 42 Piscine
+
+The **42 Piscine** is an intense 4-week C programming bootcamp created to push candidates into problem-solving, teamwork, and rapid learning.
+Participants work long hours solving exercises that grow increasingly difficult, while following strict coding standards such as the **Norminette**.
+
+This repository contains **all the work I produced during this period**, structured in a clear and accessible way.
+
+---
+
+## 📂 Repository Structure
+
+```
+42-Piscine/
+│
+├── Shell00/
+├── Shell01/
+│
+├── C00/
+├── C01/
+├── C02/
+├── C03/
+├── C04/
+├── C05/
+├── C06/
+├── C07/
+├── C08/
+├── C09/
+│
+├── Rush00/
+├── Rush01/
+├── Rush02/
+│
+├── Exam_Practice/
+│   ├── Level_0/
+│   ├── Level_1/
+│   ├── Level_2/
+│   ├── Level_3/
+│   └── Level_4/
+│
+└── Tools/
+    ├── Testers/
+    ├── Makefile-templates/
+    └── Useful-Scripts/
+```
+
+---
+
+## 🧰 What’s Included?
+
+### ✔️ Shell Projects
+
+Foundational projects that teach file manipulation, permissions, simple scripts, and command-line fundamentals.
+
+### ✔️ C Modules (C00–C09)
+
+Each module focuses on a core concept of C programming:
+
+* **C00** — Basics, functions, loops
+* **C01** — Pointers & memory
+* **C02** — String manipulation
+* **C03** — More strings, comparison, concatenation
+* **C04** — I/O and basic algorithms
+* **C05** — Recursion & math functions
+* **C06** — Command-line arguments
+* **C07** — Dynamic memory & advanced manipulation
+* **C08** — Structs, typedef, header organization
+* **C09** — Library creation (libft-style introduction)
+
+### ✔️ Rush Projects
+
+Weekend group projects designed to test collaboration and design skills under time pressure.
+
+### ✔️ Exam Practice
+
+Solutions, attempts, and practice tasks from the piscine exam levels.
+
+### ✔️ Additional Tools
+
+My personal tools for debugging, testing, compiling, and checking code quality.
+
+---
+
+## 🎯 Objectives of This Repository
+
+* Serve as a **complete historical archive** of my Piscine journey
+* Help others who want to understand the structure and type of projects in the 42 curriculum
+* Track my **progress and improvements in C programming**
+* Provide clean, organized code following **Norminette rules**
+
+---
+
+## 🚀 Getting Started
+
+To compile any C project:
+
+```sh
+cc -Wall -Wextra -Werror your_file.c -o program
+```
+
+To run:
+
+```sh
+./program
+```
+
+Tools and scripts inside the repo may simplify this.
+
+---
+
+## 📏 Norminette Compliance
+
+All code is written according to the **42 Norm Version 4.x**, including:
+
+* 25-line function rule
+* 5-function file rule
+* Forbidden functions handled accordingly
+* Header structure & formatting
+* Proper memory handling habits
+
+---
+
+## 💬 Final Notes
+
+This repository is **not a guide** but a **personal archive**.
+All code reflects what I wrote and learned during the Piscine.
+Feel free to explore, learn from it, or compare it with your own journey.
