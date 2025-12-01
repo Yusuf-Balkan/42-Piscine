@@ -1,7 +1,7 @@
 42-PISCINE
-![42](https://github.com/user-attachments/assets/ce9d3945-7d52-42af-b996-56c5945e850e)
-Proje Nasıl Pushlanır
+![42](https://42network.medium.com/42-lausanne-the-beginning-of-a-great-story-527279881287)
 
+Proje Nasıl Pushlanır
  git init 
  
 Git version control sisteminde, yeni bir Git deposu oluşturmak için kullanılan bir komuttur. Bu komut, çalışma dizininizi Git deposu haline getirir ve Git'in dosyaları izlemesi ve saklaması için gerekli tüm verileri oluşturur.
