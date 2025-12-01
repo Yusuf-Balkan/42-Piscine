@@ -1,2 +1,17 @@
-# 42-Piscine
-42 Kocaeli Piscine Works
+42-PISCINE
+![42](https://github.com/user-attachments/assets/ce9d3945-7d52-42af-b996-56c5945e850e)
+Proje Nasıl Pushlanır
+ git init 
+Git version control sisteminde, yeni bir Git deposu oluşturmak için kullanılan bir komuttur. Bu komut, çalışma dizininizi Git deposu haline getirir ve Git'in dosyaları izlemesi ve saklaması için gerekli tüm verileri oluşturur.
+
+ git add . 
+Git üzerinde bulunan tüm dosyaları ve değişiklikleri geçerli çalışma dizinine eklemek için kullanılan bir komandır. Bu komut, Git üzerindeki tüm dosyaları ve değişiklikleri Git veritabanına kaydetmenize olanak tanır.
+
+ git commit -m "Message" 
+git çalışma dizinindeki değişiklikleri geçici bir depolama alanına (commit) ekler ve bu değişikliklerin neden yapıldığı hakkında kısa bir açıklama ("-m" seçeneği ile belirtilen mesaj) ekler. Bu komut, projede yapılan değişikliklerin kaydedilmesi için kullanılır.
+
+ git push repo_linki 
+Git repositorisindeki dosyaları Git depolama hizmetine göndermeyi sağlar.
+
+ git clone repo_linki 
+Not: Proje pushlandı projenizi kontrol etmek için git clone ile kontrol edebilirsiniz.
