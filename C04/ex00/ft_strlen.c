@@ -3,22 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 19:26:59 by iuslu             #+#    #+#             */
-/*   Updated: 2025/11/14 19:33:45 by iuslu            ###   ########.fr       */
+/*   Created: 2025/11/22 20:05:12 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/23 16:29:09 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
+#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
-	int	i;
+	int	y;
 
-	i = 0;
-	while (str[i] != '\0')
+	y = 0;
+	while (str[y] != '\0')
 	{
-		i++;
+		y++;
 	}
-	return (i);
+	return (y);
 }
+
+int    main(void)
+{
+	printf("%d", ft_strlen("Havva"));
+}
+

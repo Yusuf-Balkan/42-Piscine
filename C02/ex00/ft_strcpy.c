@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 08:21:02 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 08:21:02 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/13 07:32:10 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/22 02:45:23 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int		y;
+	int	y;
 
 	y = 0;
 	while (src[y] != '\0')

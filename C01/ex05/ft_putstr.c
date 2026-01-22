@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 08:16:53 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 08:16:53 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/14 18:39:05 by iuslu             #+#    #+#             */
+/*   Updated: 2025/11/21 21:04:46 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,17 @@
 
 void	ft_putstr(char *str)
 {
-	int		i;
-   
-	i = 0;
-	while (str[i] != '\0')
+	int	y;
+
+	y = 0;
+	while (y[str])
 	{
-		write(1, &str[i], 1);
-		i++;
+		write(1, str + y, 1);
+		y++;
 	}
+}
+
+int main(void)
+{
+	ft_putstr("hello worrld");
 }

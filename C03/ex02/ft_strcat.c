@@ -3,36 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/22 06:14:19 by iuslu             #+#    #+#             */
-/*   Updated: 2025/11/22 08:33:13 by iuslu            ###   ########.fr       */
+/*   Created: 2025/11/22 07:13:42 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/22 15:40:17 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	destlen(char *dest2)
-{
-	int	i;
-
-	i = 0;
-	while (dest2[i] != '\0')
-		i++;
-	return (i);
-}
+#include <unistd.h>
 
 char	*ft_strcat(char *dest, char *src)
 {
-	int	i;
-	int	z;
+	int	y;
+	int	b;
 
-	z = 0;
-	i = destlen(dest);
-	while (src[z] != '\0')
+	y = 0;
+	while (dest[y] != '\0')
 	{
-		dest[i] = src[z];
-		z++;
-		i++;
+		y++;
 	}
-	dest[i] = '\0';
+	b = 0;
+	while (src[b] != '\0')
+	{
+		dest[y] = src[b];
+		y++;
+		b++;
+	}
+	dest[y] = '\0';
 	return (dest);
 }

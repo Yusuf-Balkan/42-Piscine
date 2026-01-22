@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-01 19:03:46 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-01 19:03:46 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/11 19:32:16 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/19 19:20:54 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,28 @@
 
 void	ft_print_comb(void)
 {
-	int		y;
-	int		b;
-	int		c;
+	int	a;
+	int	b;
+	int	c;
 
-	y = '0';
-	while (y <= '7')
+	a = '0';
+	while (a <= '7')
 	{
-		b = y + 1;
+		b = a + 1;
 		while (b <= '8')
 		{
 			c = b + 1;
 			while (c <= '9')
 			{
-				write(1, &y, 1);
+				write(1, &a, 1);
 				write(1, &b, 1);
 				write(1, &c, 1);
-				if (y != '7' )
-					write(1, &", ", 1);
+				if (a != '7')
+					write(1, &", ", 2);
 				c++;
 			}
 			b++;
 		}
-		y++;
+		a++;
 	}
 }

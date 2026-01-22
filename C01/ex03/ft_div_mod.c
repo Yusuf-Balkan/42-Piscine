@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 08:16:25 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 08:16:25 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/13 11:21:14 by iuslu             #+#    #+#             */
+/*   Updated: 2025/11/14 09:19:19 by iuslu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_div_mod(int a, int b, int *div, int	*mod)
+#include <unistd.h>
+
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
 	if (b != 0)
 	{

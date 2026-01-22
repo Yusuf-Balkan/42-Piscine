@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-01 19:00:09 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-01 19:00:09 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/12 16:40:09 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/14 19:23:59 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <unistd.h>
 
@@ -20,8 +19,8 @@ void	ft_putchar(char c)
 
 void	ft_print_comb2(void)
 {
-	char	y;
-	char	b;
+	int	y;
+	int	b;
 
 	y = 0;
 	b = 0;

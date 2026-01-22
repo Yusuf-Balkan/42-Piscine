@@ -3,21 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 08:17:12 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 08:17:12 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/14 19:26:59 by iuslu             #+#    #+#             */
+/*   Updated: 2025/11/21 21:59:37 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
-	int		i;
+	int	y;
 
-	i = 0;
-	while (str[i] != '\0')
+	y = 0;
+	while (str[y] != '\0')
 	{
-		i++;
+		y++;
 	}
-	return (i);
+	return (y);
 }

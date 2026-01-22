@@ -3,36 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/22 06:14:19 by iuslu             #+#    #+#             */
-/*   Updated: 2025/11/22 13:00:36 by iuslu            ###   ########.fr       */
+/*   Created: 2025/11/22 15:40:56 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/22 15:50:16 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	destlen(char *dest2)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (dest2[i] != '\0')
-		i++;
-	return (i);
-}
+#include <unistd.h>
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	unsigned int	z;
-	unsigned int	i;
+	unsigned int	a;
+	unsigned int	b;
 
-	z = 0;
-	i = destlen(dest);
-	while (src[z] != '\0' && z < nb)
+	a = 0;
+	while (dest[a] != '\0')
+		a++;
+	b = 0;
+	while (src[b] != '\0' && b < nb)
 	{
-		dest[i] = src[z];
-		z++;
-		i++;
+		dest[a] = src[b];
+		a++;
+		b++;
 	}
-	dest[i] = '\0';
+	dest[a] = '\0';
 	return (dest);
 }

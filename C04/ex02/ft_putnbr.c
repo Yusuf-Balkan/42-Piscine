@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/13 02:19:18 by iuslu             #+#    #+#             */
-/*   Updated: 2025/11/13 03:08:32 by iuslu            ###   ########.fr       */
+/*   Created: 2025/11/12 20:54:49 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/23 17:10:56 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -27,7 +28,7 @@ void	ft_putnbr(int nb)
 	else if (nb < 0)
 	{
 		ft_putchar('-');
-		nb *= -1;
+		nb = -nb;
 		ft_putnbr(nb);
 	}
 	else if (nb > 9)
@@ -36,5 +37,10 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 	else
-		ft_putchar(nb + 48);
+		ft_putchar(nb + '0');
+}
+
+int    main(void)
+{
+	ft_putnbr(-360);
 }

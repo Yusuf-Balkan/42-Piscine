@@ -3,18 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 08:16:04 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 08:16:04 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/13 05:47:44 by iuslu             #+#    #+#             */
+/*   Updated: 2025/11/21 20:38:48 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+
 void	ft_swap(int *a, int *b)
 {
-	int		swap;
+	int	swap;
 
 	swap = *a;
 	*a = *b;
 	*b = swap;
+	printf("%d", swap)
+}
+
+int 	main(void)
+{
+	int	a;
+	int	b;
+	
+	a = 20;
+	b = 5;
+	ft_swap(&a, &b);
 }

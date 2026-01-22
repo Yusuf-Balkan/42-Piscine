@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 08:23:41 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 08:23:41 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/22 02:17:48 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/22 04:27:15 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,16 @@
 
 int	ft_str_is_numeric(char *str)
 {
-	int		y;
+	int	i;
 
-	y = 0;
-	while (str[y] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (str[y] >= '0' && str[y] <= '9')
-		{	
-			y++;
-		}
-		else
+		if (str[i] < '0' || str[i] > '9')
 		{
 			return (0);
 		}
+		i++;
 	}
 	return (1);
 }

@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_find_next_prime.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/25 14:27:49 by ybalkan           #+#    #+#             */
-/*   Updated: 2025/11/25 14:42:32 by ybalkan          ###   ########.fr       */
+/*   Updated: 2025/11/25 22:56:13 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
 int	ft_find_prime(int nb)
 {
@@ -35,4 +36,9 @@ int	ft_find_next_prime(int nb)
 	while (!ft_find_prime(nb))
 		nb++;
 	return (nb);
+}
+
+int main(void)
+{
+	printf("%d", ft_find_next_prime(6));
 }

@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-01 18:58:28 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-01 18:58:28 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/08 16:56:19 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/14 18:26:17 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char y)
+void	ft_putchar(char c)
 {
-	write(1, &y, 1);
+	write(1, &c, 1);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-01 18:58:34 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-01 18:58:34 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/08 19:06:15 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/14 18:45:17 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ void	ft_print_alphabet(void)
 	{
 		write(1, &alphabet, 1);
 		alphabet++;
-	}	
+	}
 }

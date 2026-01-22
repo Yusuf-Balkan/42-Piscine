@@ -3,34 +3,43 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/23 16:25:36 by iuslu             #+#    #+#             */
-/*   Updated: 2025/11/23 20:14:51 by iuslu            ###   ########.fr       */
+/*   Created: 2025/11/22 20:37:08 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/23 16:42:20 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+#include <stdio.h>
+
 int	ft_atoi(char *str)
 {
-	int	i;
+	int	y;
 	int	sign;
-	int	newnbr;
+	int	result;
 
+	y = 0;
 	sign = 1;
-	i = 0;
-	newnbr = 0;
-	while ((str[i] <= 13 && str[i] >= 9) || str[i] == ' ')
-		i++;
-	while (str[i] == '-' || str[i] == '+')
+	result = 0;
+	while (str[y] == ' ' || (str[y] >= 9 && str[y] <= 13))
+		y++;
+	while (str[y] == '+' || str[y] == '-')
 	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
+		if (str [y] == '-')
+			sign = -sign;
+		y++;
 	}
-	while (str[i] <= '9' && str[i] >= '0')
+	while (str[y] >= '0' && str[y] <= '9')
 	{
-		newnbr = newnbr * 10 + (str[i] - '0');
-		i++;
+		result = result * 10 + (str[y] - '0');
+		y++;
 	}
-	return (newnbr * sign);
+	return (result * sign);
 }
+
+int    main(void)
+{
+	printf("%d", ft_atoi(" ---+--+1234ab567"));
+}
+

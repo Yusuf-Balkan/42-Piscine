@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 08:15:36 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 08:15:36 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/13 03:11:12 by iuslu             #+#    #+#             */
+/*   Updated: 2025/11/21 21:18:34 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+
 void	ft_ft(int *nbr)
-{
-	*nbr = 42;
+{	
+	int	a;
+
+	a = 42;
+	nbr = &a;
 }

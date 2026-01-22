@@ -3,19 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-01 19:00:15 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-01 19:00:15 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/12 20:54:49 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/14 19:24:20 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include <unistd.h>
 
-void	ft_putchar(char y)
+void	ft_putchar(char c)
 {
-	write(1, &y, 1);
+	write(1, &c, 1);
 }
 
 void	ft_putnbr(int nb)
@@ -29,7 +28,7 @@ void	ft_putnbr(int nb)
 	else if (nb < 0)
 	{
 		ft_putchar('-');
-		nb *= -1;
+		nb = -nb;
 		ft_putnbr(nb);
 	}
 	else if (nb > 9)
@@ -38,5 +37,5 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb % 10);
 	}
 	else
-		ft_putchar(nb + 48);
+		ft_putchar(nb + '0');
 }

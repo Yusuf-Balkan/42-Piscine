@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 08:22:33 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 08:22:33 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/13 07:52:46 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/22 04:20:58 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_str_is_alpha(char *str)
 {
-	int		y;
+	int	y;
 
 	y = 0;
 	while (str[y] != '\0')
 	{
-		if ((str[y] >= 'a' && str[y] <= 'z')
-			|| (str[y] >= 'A' && str[y] <= 'Z'))
-				y++;
+		if ((str[y] >= 'A' && str[y] <= 'Z')
+			|| (str[y] >= 'a' && str[y] <= 'z'))
+			y++;
 		else
 			return (0);
 	}

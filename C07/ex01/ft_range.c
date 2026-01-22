@@ -3,32 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr>  #+#  +:+       +#+       */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-12-02 20:34:57 by ybalkan           #+#    #+#             */
-/*   Updated: 2025-12-02 20:34:57 by ybalkan          ###   ########.tr       */
+/*   Created: 2025/11/25 16:29:56 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/25 17:12:59 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include <unistd.h>
 
-int    *ft_range(int min, int max)
+int	*ft_range(int min, int max)
 {
-    int    *arr;
-    int    y;
+	int	*arr;
+	int	size;
 
-    if (min >= max)
-        return (NULL);
-    arr = (int *)malloc((max - min) * sizeof(int));
-    if (arr == NULL)
-        return (NULL);
-    y = 0;
-    while (min < max)
-    {
-        arr[y] = min;
-        y++;
-        min++;
-    }
-    return (arr);
 }

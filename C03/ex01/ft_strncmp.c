@@ -3,23 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iuslu <iuslu@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/22 03:25:30 by iuslu             #+#    #+#             */
-/*   Updated: 2025/11/22 06:34:27 by iuslu            ###   ########.fr       */
+/*   Created: 2025/11/22 06:32:22 by ybalkan           #+#    #+#             */
+/*   Updated: 2025/11/22 07:12:56 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+
 int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	unsigned int	i;
+	unsigned int	y;
 
-	i = 0;
+	y = 0;
 	if (n == 0)
 		return (0);
-	while ((s1[i] != '\0' || s2[i] != '\0') && s1[i] == s2[i] && i < n - 1)
+	while ((s1[y] != '\0' || s2[y] != '\0') && y < n)
 	{
-		i++;
+		if (s1[y] != s2[y])
+			return (s1[y] - s2[y]);
+		y++;
 	}
-	return (s1[i] - s2[i]);
+	return (0);
 }
