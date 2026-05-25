@@ -1,32 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybalkan <ybalkan@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 18:39:05 by iuslu             #+#    #+#             */
-/*   Updated: 2026/05/25 22:12:59 by ybalkan          ###   ########.fr       */
+/*   Created: 2026/05/25 22:10:34 by ybalkan           #+#    #+#             */
+/*   Updated: 2026/05/25 22:11:17 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+void	ft_sort_int_tab(int *tab, int size)
 {
-	int	y;
+	int	i;
+	int	temp;
 
-	y = 0;
-	while (y[str])
+	i = 0;
+	while (i < size - 1)
 	{
-		write(1, str + y, 1);
-		y++;
+		if (tab[i] > tab[i + 1])
+		{
+			temp = tab[i];
+			tab[i] = tab[i + 1];
+			tab[i + 1] = temp;
+			i = 0;
+		}
+		else
+			i++;
 	}
 }
 
 //----------MAIN----------//
 
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-	ft_putstr("hello worrld");
+	int	tab[5] = {5, 2, 4, 1, 3};
+	int	i;
+
+	ft_sort_int_tab(tab, 5);
+
+	i = 0;
+	while (i < 5)
+	{
+		printf("%d ", tab[i]);
+		i++;
+	}
+
+	return (0);
 }

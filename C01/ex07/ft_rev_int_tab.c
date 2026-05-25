@@ -1,32 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ybalkan <ybalkan@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/14 18:39:05 by iuslu             #+#    #+#             */
-/*   Updated: 2026/05/25 22:12:59 by ybalkan          ###   ########.fr       */
+/*   Created: 2026/05/25 22:08:48 by ybalkan           #+#    #+#             */
+/*   Updated: 2026/05/25 22:09:45 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putstr(char *str)
+void	ft_rev_int_tab(int *tab, int size)
 {
-	int	y;
+	int	i;
+	int	temp;
 
-	y = 0;
-	while (y[str])
+	i = 0;
+	while (i < size / 2)
 	{
-		write(1, str + y, 1);
-		y++;
+		temp = tab[i];
+		tab[i] = tab[size - 1 - i];
+		tab[size - 1 - i] = temp;
+		i++;
 	}
 }
 
 //----------MAIN----------//
 
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-	ft_putstr("hello worrld");
+	int	tab[5] = {1, 2, 3, 4, 5};
+	int	i;
+
+	ft_rev_int_tab(tab, 5);
+
+	i = 0;
+	while (i < 5)
+	{
+		printf("%d ", tab[i]);
+		i++;
+	}
+
+	return (0);
 }
