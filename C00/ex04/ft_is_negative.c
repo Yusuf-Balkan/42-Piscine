@@ -3,23 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/11 19:05:07 by ybalkan           #+#    #+#             */
-/*   Updated: 2025/11/14 19:04:00 by ybalkan          ###   ########.fr       */
+/*   Created: 2026/05/25 17:37:02 by ybalkan           #+#    #+#             */
+/*   Updated: 2026/05/25 17:45:56 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_is_negative(int n)
+void    ft_is_negative(int n)
 {
-	if (n < 0)
-	{
-		write(1, "N", 1);
-	}
-	else
-	{
-		write(1, "P", 1);
-	}
+    if (n >= 0)
+    {
+        write(1, "P", 1);
+    }
+    else
+        write(1, "N", 1);
+}
+
+//----------MAIN----------//
+
+int main()
+{
+    ft_is_negative(1);
+    return (0);
 }

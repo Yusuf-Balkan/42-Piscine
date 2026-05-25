@@ -3,23 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ybalkan <ybalkan@student.42kocaeli.com.tr> +#+  +:+       +#+        */
+/*   By: ybalkan <ybalkan@student.42kocaeli.com.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/08 19:06:15 by ybalkan           #+#    #+#             */
-/*   Updated: 2025/11/14 18:45:17 by ybalkan          ###   ########.fr       */
+/*   Created: 2026/05/25 17:11:33 by ybalkan           #+#    #+#             */
+/*   Updated: 2026/05/25 17:15:49 by ybalkan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void    ft_print_alphabet(void)
 {
-	char	alphabet;
+    char i;
+    i = 97;
+    while (i <= 122)
+    {
+        write(1, &i, 1);
+        i++;
+    }  
+}
 
-	alphabet = 'a';
-	while (alphabet <= 'z')
-	{
-		write(1, &alphabet, 1);
-		alphabet++;
-	}
+//----------MAIN----------//
+
+int	main(void)
+{
+	ft_print_alphabet();
+	return (0);
 }
